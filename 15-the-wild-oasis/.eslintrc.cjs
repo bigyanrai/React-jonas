@@ -19,5 +19,6 @@ module.exports = {
     ],
     "react/prop-types": "off",
     "no-unused-vars": "warn",
+    "no-constant-condition": "off",
   },
 };
