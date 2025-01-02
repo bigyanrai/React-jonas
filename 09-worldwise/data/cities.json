@@ -71,6 +71,30 @@
         "lat": "40.106043180566935",
         "lng": "-0.10505676269531251"
       }
+    },
+    {
+      "id": "59dc",
+      "cityName": "Castello de la Plana",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-01-01T12:27:23.164Z",
+      "notes": "fsdf",
+      "position": {
+        "lat": "39.9781724447063",
+        "lng": "-0.02695083618164063"
+      }
+    },
+    {
+      "id": "fd3c",
+      "cityName": "Kathmandu",
+      "country": "Nepal",
+      "emoji": "🇳🇵",
+      "date": "2025-01-01T12:27:29.222Z",
+      "notes": "",
+      "position": {
+        "lat": "27.737326651684807",
+        "lng": "85.38488388061523"
+      }
     }
   ]
 }
