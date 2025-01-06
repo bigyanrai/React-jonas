@@ -6,7 +6,6 @@ import styled from "styled-components";
 const Main = styled.main`
   background-color: var(--color-grey-50);
   padding: 4rem 4.8rem 6.4rem;
-  overflow: scroll;
 `;
 
 const StyledAppLayout = styled.div`
@@ -16,6 +15,8 @@ const StyledAppLayout = styled.div`
   grid-template-rows: auto 1fr;
 `;
 const Container = styled.div`
+  /* border: 4px dotted red; */
+  /* overflow: scroll; */
   margin: 0 auto;
   max-width: 120rem;
   display: flex;
