@@ -1,13 +1,20 @@
+import Counter from "@/app/_components/Counter";
 import CabinCard from "@/app/_components/CabinCard";
-import Counter from "../_components/Counter";
+
+import CabinList from "../_components/CabinList";
+import { Suspense } from "react";
+import SpinnerMini from "../_components/SpinnerMini";
+import Spinner from "../_components/Spinner";
+import Filter from "../_components/Filter";
 
 export const metadata = {
   title: "Cabins",
 };
 
-export default function Page() {
-  // CHANGE
-  const cabins = [];
+export const revalidate = 3600;
+
+export default async function Page({ searchParams }) {
+  const filter = searchParams?.capacity ?? "all";
 
   return (
     <div>
@@ -23,13 +30,13 @@ export default function Page() {
         Welcome to paradise.
       </p>
 
-      {cabins.length > 0 && (
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 xl:gap-14">
-          {cabins.map((cabin) => (
-            <CabinCard cabin={cabin} key={cabin.id} />
-          ))}
-        </div>
-      )}
+      <div className="flex justify-end mb-8">
+        <Filter />
+      </div>
+
+      <Suspense fallback={<Spinner />} key={filter}>
+        <CabinList filter={filter} />
+      </Suspense>
     </div>
   );
 }

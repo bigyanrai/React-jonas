@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Navigation from "./_components/Navigation";
 import bg from "@/public/bg.png";
 
 export default function Page() {
@@ -9,10 +8,10 @@ export default function Page() {
       <Image
         src={bg}
         fill
-        quality={80}
-        alt="Mountains and forests with two cabins"
         placeholder="blur"
+        quality={80}
         className="object-cover object-top"
+        alt="Mountains and forests with two cabins"
       />
 
       <div className="relative z-10 text-center">

@@ -11,8 +11,8 @@ export default function Page() {
             Where nature&apos;s beauty and comfortable living blend seamlessly.
             Hidden away in the heart of the Italian Dolomites, this is your
             paradise away from home. But it&apos;s not just about the luxury
-            cabins. It's about the experience of reconnecting with nature and
-            enjoying simple pleasures with family.
+            cabins. It&apos;s about the experience of reconnecting with nature
+            and enjoying simple pleasures with family.
           </p>
           <p>
             Our 8 luxury cabins provide a cozy base, but the real freedom and
